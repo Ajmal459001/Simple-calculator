@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<div id="calculator">
+    <input type="text" id="result" class="form-control" placeholder="0" readonly>
+    <div class="buttons">
+        <button onclick="displayContent('(')" id="brl">(</button>
+        <button onclick="displayContent(')')" id="brr">)</button>
+        <button onclick="calScreenClear()" id="ac">AC</button>
+        <button onclick="displayContent('/')" id="divid">÷</button>
+        <button onclick="displayContent('7')" id="seven">7</button>
+        <button onclick="displayContent('8')" id="eight">8</button>
+        <button onclick="displayContent('9')" id="nine">9</button>
+        <button onclick="displayContent('*')" id="mul">*</button>
+        <button onclick="displayContent('4')" id="four">4</button>
+        <button onclick="displayContent('5')" id="five">5</button>
+        <button onclick="displayContent('6')" id="six">6</button>
+        <button onclick="displayContent('-')" id="sub">-</button>
+        <button onclick="displayContent('1')" id="one">1</button>
+        <button onclick="displayContent('2')" id="two">2</button>
+        <button onclick="displayContent('3')" id="three">3</button>
+        <button onclick="displayContent('+')" id="add">+</button>
+        <button onclick="displayContent('0')" id="zero">0</button>
+        <button onclick="displayContent('.')" id="dot">.</button>
+        <button onclick="displayContent('**')" id="exp">exp</button>
+        <button onclick="calOutput()" id="equals">&#61</button>
+        <button onclick="removeLastDigit()" id="del">&#9003;</button>
+    </div>
+</div> 
+
+</body>
+<script src="./main.js"></script>
+</html>
